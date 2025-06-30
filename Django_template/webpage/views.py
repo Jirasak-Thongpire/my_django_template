@@ -5,10 +5,10 @@ from django.shortcuts import render, HttpResponse
 
 
 def index(request):
-    return HttpResponse("Hello, world! This is the index page.")
+    return render(request, 'index.html')
 
 def about(request):
-    return HttpResponse("This is the about page.")
+    return render(request, 'about.html')
 
 def contact(request):
-    return HttpResponse("This is the contact page.")
+    return render(request, 'contact.html')
